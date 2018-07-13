@@ -1,7 +1,7 @@
 {
   "name": "pauper",
   "version": "1.0.0",
-  "description": "poor man's client-side templating",
+  "description": "a poor man's client-side templating engine",
   "keywords": [
     "pauper",
     "template",

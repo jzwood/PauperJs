@@ -13,7 +13,7 @@ To illustrate, consider the following markup:
     const today = (new Date()).getDay();
     const week = ['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'];
     const party = today === 0 || today === 6;
-    return `It's ${week[day]}${party ? '—  gotta party! 🍹' : '. Got to work. 🖨'}`;
+    return `It's ${week[today]}${party ? '—  gotta party! 🍹' : '. Got to work. 🖨'}`;
   </render>
 </h1>
 ```
