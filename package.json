@@ -2,8 +2,13 @@
   "name": "pauper",
   "version": "1.0.0",
   "description": "poor man's client-side templating",
-  "main": "pauper.js",
+  "keywords": [
+    "pauper",
+    "template",
+    "templates",
+    "html"
+  ],
   "author": "Jake Wood",
-  "license": "MIT",
-  "private": false
+  "license": "MIT"
 }
+

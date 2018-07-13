@@ -4,7 +4,7 @@ is a micro-library for client-side templating.
 ![license](https://img.shields.io/github/license/mashape/apistatus.svg?style=for-the-badge)
 
 ## API
-Pauper transforms the [textContent](https://developer.mozilla.org/en-US/docs/Web/API/Node/textContent) of every `<render>` element in your markup into a function and replaces the [innerHTML](https://developer.mozilla.org/en-US/docs/Web/API/Element/innerHTML) of that element with the returned value of that function (see [demo](./demo/index.html)).
+Pauper transforms the [textContent](https://developer.mozilla.org/en-US/docs/Web/API/Node/textContent) of every `<render>` element in your markup into a function and replaces the [innerHTML](https://developer.mozilla.org/en-US/docs/Web/API/Element/innerHTML) of that element with the returned value of that function (see [demo](https://jzwood.github.io/PauperJs/demo/)).
 
 To illustrate, consider the following markup:
 ```html
@@ -19,13 +19,13 @@ To illustrate, consider the following markup:
 ```
 
 on Saturday this would render as
-```
+```html
 <h1>
   <render>It's Saturday — gotta party! 🍹</render>
 </h1>
 ```
 and on Monday as
-```
+```html
 <h1>
   <render>It's Monday. Got to work. 🖨</render>
 </h1>
