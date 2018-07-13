@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" />
+  <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+  <title>PauperJs</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="container">
+    <picture>
+      <img class="ron" src="ron_swanson.jpeg">
+    </picture>
+    <div class="valign quote">
+     <cite class="quote-body">
+      <render>
+        var api = 'https://ron-swanson-quotes.herokuapp.com/v2/quotes';
+        return getJSON(api);
+      </render>
+      </cite>
+      <div class="quote-tail"></div>
+    </div>
+  </main>
+  <footer>
+    Built with
+    <a target="_blank" href="../">PauperJs</a> and the
+    <a target="_blank" href="https://github.com/jamesseanwright/ron-swanson-quotes">Ron Swanson API</a>
+    Copyright ©
+    <render>
+      return (new Date()).getFullYear();
+    </render>
+    Jake Zyons Wood
+  </footer>
+  <script src="ajax.js"></script>
+  <script src="../pauper.js"></script>
+</body>
+</html>
+
