@@ -10,6 +10,13 @@ body {
   right: 0;
 }
 
+@media (min-aspect-ratio: 1/1) {
+  .container {
+    right: 50%;
+    transform: translateX(50%);
+  }
+}
+
 .ron {
   height: 100vh;
   display: block;
