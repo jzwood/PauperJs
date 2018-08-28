@@ -4,7 +4,7 @@ is a micro-library for client-side templating.
 ![license](https://img.shields.io/github/license/mashape/apistatus.svg?style=for-the-badge)
 
 ## API
-Pauper transforms the [textContent](https://developer.mozilla.org/en-US/docs/Web/API/Node/textContent) of every `<render>` element in your markup into a function and replaces the [innerHTML](https://developer.mozilla.org/en-US/docs/Web/API/Element/innerHTML) of that element with the returned value of that function (see [demo](https://jzwood.github.io/PauperJs/demo/)).
+Pauper transforms the [textContent](https://developer.mozilla.org/en-US/docs/Web/API/Node/textContent) of every `<render>` element in your markup into a _function_ and replaces the [innerHTML](https://developer.mozilla.org/en-US/docs/Web/API/Element/innerHTML) of that element with the returned value of that _function_ (see [demo](https://jzwood.github.io/PauperJs/demo/)).
 
 To illustrate, consider the following markup:
 ```html
@@ -33,3 +33,6 @@ and on Monday as
 
 ## Promises
 Want to render async data? No problem. Pauper will correctly populate the render field if the `<render>` function returns a promise.
+
+## LICENSE
+MIT
