@@ -7,7 +7,7 @@ is a micro-library for client-side templating.
 Pauper transforms the [textContent](https://developer.mozilla.org/en-US/docs/Web/API/Node/textContent) of every `<render>` element in your markup into a _function_ and replaces the [innerHTML](https://developer.mozilla.org/en-US/docs/Web/API/Element/innerHTML) of that element with the returned value of that _function_ (see [demo](https://jzwood.github.io/PauperJs/demo/)).
 
 To illustrate, consider the following markup:
-```html
+```
 <h1>
   <render>
     const today = (new Date()).getDay();
@@ -19,13 +19,13 @@ To illustrate, consider the following markup:
 ```
 
 on Saturday this would render as
-```html
+```
 <h1>
   <render>It's Saturday — gotta party! 🍹</render>
 </h1>
 ```
 and on Monday as
-```html
+```
 <h1>
   <render>It's Monday. Got to work. 🖨</render>
 </h1>
