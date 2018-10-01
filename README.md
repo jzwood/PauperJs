@@ -37,7 +37,7 @@ Want to render async data? No problem. Pauper will correctly populate the render
 ## No Javascript
 Browsers usually have Javascript turned on but when they don't you want to be prepared. To do this you can place static fallback copy inside of a `<norender>` element.
 
-```html
+```
 <p>Welcome to my webpage!
   <norender>Plz turn on JavaScript to get the best experience!</norender>
   <render> return ajax('get:puppy_pics:all');</render>
@@ -47,7 +47,7 @@ Browsers usually have Javascript turned on but when they don't you want to be pr
 When Javascript is disabled in the client's browser PauperJs won't run (_obviously_) which means that in order for the fallback to work correctly the following css must be added to the project manually.
 
 ```css
-render:not(rendered) {
+render:not(.rendered) {
   display: none;
 }
 ```
